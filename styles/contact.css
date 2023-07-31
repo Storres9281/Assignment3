@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*Al primer fieldset darle un espaciado entre cada uno de 10px*/
+form fieldset:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+/*Todos los inputs menos los de tipo radio y checkbox*/
+form input:not([type="radio"]):not([type="checkbox"]) {
+    width: 100%;
+}

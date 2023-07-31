@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f9f6f4;
+}
+
+/*Imagen de header y texto los deja hacia la derecha y centrados horizontalmente*/
+header {
+    background: #75b855;
+    padding: 16px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/*Imagen de tamaño 100px x 100px*/
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+/*Deja links a la derecha*/
+nav {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px solid #75b855;
+}
+
+/*Incrementa tamaño de texto y agrega border al rededor del texto*/
+nav a {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #75b855;
+    color: #75b855;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*Cuando cursor pasa por encima cambia de color el texto y el bordr*/
+nav a:hover {
+    color: #157241;
+    border-color: #157241;
+}
+
+/*Contenido de main se va hacia la izquierda*/
+main {
+    float: left;
+    width: 70%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*Fuera de la imagen grande y video agrega espaciado*/
+figure {
+    padding: 20px;
+    border: 1px solid #157241;
+    border-radius: 20px;
+}
+
+/*Da tamaño predeterminado a imagen*/
+main img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+main iframe {
+    border-radius: 10px;
+}
+
+/*Contenido aside se va hacia la derecha*/
+aside {
+
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background-color: #75b855;
+    border-radius: 20px;
+}
+
+aside h2 {
+    margin-bottom: 50px;
+}
+
+/*Elimina bullet points de lista y agrega mas line height*/
+aside ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+/*Se le indica que pasa hacia abajo del todo*/
+footer {
+    background-color: red;
+    padding: 1.2rem;
+    clear: both;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+/*Texto de footer mas pequeño*/
+footer p {
+    font-size: 12px;
+}
+
+/*En dispposivos pequeños aside y main quede uno encima del otro*/
+@media screen and (max-width: 767px) {
+
+    main,
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+}
